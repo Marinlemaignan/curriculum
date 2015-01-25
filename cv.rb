@@ -15,10 +15,10 @@ class MarinleMaignan < SuperGreat::BackEndDeveloper::ForSale
     @diplomas         = describe_diplomas
     @skills           = describe_skills
 
-    @to_do_next       = buy_the_guy!(super_developer)
+    buy_the_guy!(super_developer)
   end
 
-  def describe_skills
+  def skills
     [ :ruby, :ruby_on_rails, :javascript, :jquery, :html5, :css3,
       :ui_design, :ux_design, :back_end, :front_end, :emberjs,
       :git, :oop, :agile, :rspec, :bdd, :tdd, :deployment, :sql,
@@ -26,7 +26,7 @@ class MarinleMaignan < SuperGreat::BackEndDeveloper::ForSale
       :data_manipulation, :pair_programming ]
   end
 
-  def describe_work_experience
+  def experience
     [{from:             2013,
       to:               2015,
       company:          "Serious Fox",
@@ -56,7 +56,7 @@ class MarinleMaignan < SuperGreat::BackEndDeveloper::ForSale
       city:             "Paris" }]
   end
 
-  def describe_diplomas
+  def diplomas
     [{from:             2011,
       to:               2013,
       title_awarded:    "Graphic Design Ba(Hons) 2/1",
