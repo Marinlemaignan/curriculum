@@ -55,7 +55,6 @@ class MarinleMaignan
       [:data_manipulation,    "Very Good"],
       [:pair_programming,     "Very Good"]
     ]
-
   end
 
   def work_experience
