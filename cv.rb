@@ -1,9 +1,7 @@
 class MarinleMaignan
+  attr_accessor :first_name, :last_name, :age, :email, :phone
 
-  attr_accessor :first_name, :last_name, :age, :email, :phone, :experience,
-                :diplomas, :skills, :future, :super_developer, :to_do_next
-
-  def initialize(super_developer)
+  def initialize
     puts "HELLO WORLD !"
     puts "\n"
 
@@ -101,6 +99,7 @@ class MarinleMaignan
       city:             "Paris" }]
   end
 
+private
   def describe(object, klass)
     object.each_with_index do |exp, i|
       i = i+1
@@ -117,22 +116,11 @@ class MarinleMaignan
       puts "\n"
     end
   end
-
-  def buy_the_guy!(super_developer)
-    you = Employer.new()
-
-    if super_developer.interesting?
-      you.send_a_mail_to(super_developer, email)
-
-    elsif super_developer.super_interesting?
-      you.give_a_call_to(super_developer, phone)
-    end
-  end
 end
 
 
 
-a = MarinleMaignan.new("a")
+a = MarinleMaignan.new
 
 
 puts "Thank You for Reading!"
