@@ -6,3 +6,5 @@ cd curriculum
 ruby cv.rb
 ```
 
+Thank You for Your Time!
+
