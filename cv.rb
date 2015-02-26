@@ -25,41 +25,42 @@ class MarinleMaignan
     end
   end
 
+private
+
   def skills
-    [ [:ruby,                 "Very Good"],
-      [:ruby_on_rails,        "Very Good"],
-      [:javascript,           "Very Good"],
-      [:jquery,               "Very Good"],
-      [:html5,                "Very Good"],
-      [:css3,                 "Very Good"],
-      [:ui_design,            "Very Good"],
-      [:ux_design,            "Very Good"],
-      [:back_end,             "Very Good"],
-      [:front_end,            "Very Good"],
-      [:emberjs,              "Very Good"],
-      [:git,                  "Very Good"],
-      [:oop,                  "Very Good"],
-      [:agile,                "Very Good"],
-      [:rspec,                "Very Good"],
-      [:bdd,                  "Very Good"],
-      [:tdd,                  "Very Good"],
-      [:deployment,           "Very Good"],
-      [:sql,                  "Very Good"],
-      [:cloud_technologies,   "Very Good"],
-      [:rvm,                  "Very Good"],
-      [:heroku,               "Very Good"],
-      [:aws,                  "Very Good"],
-      [:stripejs,             "Very Good"],
-      [:data_manipulation,    "Very Good"],
-      [:pair_programming,     "Very Good"]
-    ]
+    [ :ruby,
+      :ruby_on_rails,
+      :javascript,
+      :jquery,
+      :html5,
+      :css3,
+      :ui_design,
+      :ux_design,
+      :back_end,
+      :front_end,
+      :emberjs,
+      :git,
+      :oop,
+      :agile,
+      :rspec,
+      :bdd,
+      :tdd,
+      :deployment,
+      :sql,
+      :cloud_technologies,
+      :rvm,
+      :heroku,
+      :aws,
+      :stripejs,
+      :data_manipulation,
+      :pair_programming ]
   end
 
   def work_experience
     [{from:             2013,
       to:               2015,
       company:          "Serious Fox",
-      job_description:  "Ruby Developer",
+      job_description:  "Back End (Ruby) Developer",
       type:             "Contract",
       city:             "London"
     },{
@@ -99,21 +100,19 @@ class MarinleMaignan
       city:             "Paris" }]
   end
 
-private
   def describe(object, klass)
     object.each_with_index do |exp, i|
       i = i+1
       if klass == "skills"
-        puts "- #{exp[0].capitalize} : #{exp[1].capitalize}"
+        puts "- #{exp.to_s.capitalize.gsub('_', ' ')}"
 
       else
         puts "------------------------##{i}------------------------"
         exp.each do |key, value|
           puts "- #{key.capitalize} : #{value}"
         end
-
+        puts "\n"
       end
-      puts "\n"
     end
   end
 end
@@ -122,5 +121,5 @@ end
 
 a = MarinleMaignan.new
 
-
+puts "\n"
 puts "Thank You for Reading!"
