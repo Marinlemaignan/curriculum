@@ -2,9 +2,6 @@ class MarinleMaignan
   attr_accessor :first_name, :last_name, :age, :email, :phone
 
   def initialize
-    puts "HELLO WORLD !"
-    puts "\n"
-
     @first_name       = "Marin"
     @last_name        = "le Maignan"
     @age              =  "05-12-1989 (25)"
@@ -117,7 +114,8 @@ private
   end
 end
 
-
+puts "HELLO WORLD !"
+puts "\n"
 
 a = MarinleMaignan.new
 
