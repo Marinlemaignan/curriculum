@@ -4,7 +4,7 @@ class MarinleMaignan
   def initialize
     @first_name       = "Marin"
     @last_name        = "le Maignan"
-    @age              =  "05-12-1989 (25)"
+    @age              = "05-12-1989 (25)"
     @email            = "marin.lemaignan@gmail.com"
     @phone            = "07593085329"
 
