@@ -46,7 +46,7 @@ private
       :stripejs,
       :ui_design,
       :ux_design,
-      :and_many_other_skills_fortunately ]
+      :and_many_others_hopefully ]
   end
 
   def work_experience
