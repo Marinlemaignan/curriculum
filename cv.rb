@@ -52,7 +52,7 @@ private
   def work_experience
     [{
       from:             "April 2015",
-      to:               DateTime.now,
+      to:               Time.now,
       company:          "monAlbumPhoto.fr",
       job_description:  "Back End (Ruby) Developer",
       type:             "Contract",
