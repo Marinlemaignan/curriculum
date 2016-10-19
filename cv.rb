@@ -8,17 +8,17 @@ class MarinleMaignan
     @email            = "marin.lemaignan@gmail.com"
     @phone            = "07593085329"
 
-    self.instance_variables.each do |var|
-      var = var.to_s
-      var.slice!(0)
-      puts send(var)
+    self.instance_variables.each do |who_is_he|
+      who_is_he = who_is_he.to_s
+      who_is_he.slice!(0)
+      puts send(who_is_he)
     end
 
-    ["work_experience", "diplomas", "skills"].each do |object|
+    ["work_experience", "diplomas", "skills"].each do |what_does_he_do|
       puts "\n"
       puts "\n"
-      puts "#{object.upcase}:"
-      describe self.send(object), object
+      puts "#{what_does_he_do.upcase}:"
+      describe self.send(what_does_he_do), what_does_he_do
     end
   end
 
@@ -31,67 +31,72 @@ private
       :jquery,
       :html5,
       :css3,
-      :ui_design,
-      :ux_design,
-      :back_end,
-      :front_end,
-      :emberjs,
       :git,
       :oop,
       :agile,
       :rspec,
       :bdd,
       :tdd,
-      :deployment,
-      :sql,
-      :cloud_technologies,
+      :capistrano,
+      :postgresql,
+      :cloud_stuff,
       :rvm,
       :heroku,
       :aws,
       :stripejs,
-      :data_manipulation,
-      :pair_programming ]
+      :ui_design,
+      :ux_design,
+      :and_many_other_skills_fortunately ]
   end
 
   def work_experience
-    [{from:             2013,
-      to:               2015,
+    [{
+      from:             "April 2015",
+      to:               DateTime.now,
+      company:          "monAlbumPhoto.fr",
+      job_description:  "Back End (Ruby) Developer",
+      type:             "Contract",
+      city:             "Paris"
+    },{
+      from:             "June 2013",
+      to:               "March 2015",
       company:          "Serious Fox",
       job_description:  "Back End (Ruby) Developer",
       type:             "Contract",
       city:             "London"
     },{
-      from:             2012,
-      to:               2012,
+      from:             "July 2012",
+      to:               "October 2012",
       company:          "UiCentric",
       job_description:  "UI UX Designer",
       type:             "Freelance",
       city:             "London"
     },{
-      from:             2011,
-      to:               2012,
+      from:             "2011",
+      to:               "2012",
       company:          "Shishiishi",
       job_description:  "Lead Designer",
       type:             "Contract",
       city:             "London"
     },{
-      from:             2011,
-      to:               2011,
+      from:             "2011",
+      to:               "2011",
       company:          "Provins Tourister",
       job_description:  "UI UX Designer",
       type:             "Freelance",
-      city:             "Paris" }]
+      city:             "Paris"
+    }]
   end
 
   def diplomas
-    [{from:             2011,
-      to:               2013,
+    [{from:             "2011",
+      to:               "2013",
       title_awarded:    "Graphic Design Ba(Hons) 2/1",
       location:         "London Metropolitan University",
       city:             "London"
     },{
-      from:             2008,
-      to:               2011,
+      from:             "2008",
+      to:               "2011",
       title_awarded:    "BTS Multimedia Graphic Designer",
       location:         "l'Ecole Multimedia",
       city:             "Paris" }]
