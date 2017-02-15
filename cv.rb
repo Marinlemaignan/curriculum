@@ -54,36 +54,36 @@ private
       from:             "April 2015",
       to:               Time.now,
       company:          "monAlbumPhoto.fr",
-      job_description:  "Back End (Ruby) Developer",
-      type:             "Contract",
+      title:            "Back End (Ruby) Developer",
+      contract:         "Fulltime",
       city:             "Paris"
     },{
       from:             "June 2013",
       to:               "March 2015",
       company:          "Serious Fox",
-      job_description:  "Back End (Ruby) Developer",
-      type:             "Contract",
+      title:            "Back End (Ruby) Developer",
+      contract:         "Fulltime",
       city:             "London"
     },{
       from:             "July 2012",
       to:               "October 2012",
       company:          "UiCentric",
-      job_description:  "UI UX Designer",
-      type:             "Freelance",
+      title:            "UI UX Designer",
+      contract:         "Freelance",
       city:             "London"
     },{
       from:             "2011",
       to:               "2012",
       company:          "Shishiishi",
-      job_description:  "Lead Designer",
-      type:             "Contract",
+      title:            "Lead Designer",
+      contract:         "Fulltime",
       city:             "London"
     },{
       from:             "2011",
       to:               "2011",
       company:          "Provins Tourister",
-      job_description:  "UI UX Designer",
-      type:             "Freelance",
+      title:            "UI UX Designer",
+      contract:         "Freelance",
       city:             "Paris"
     }]
   end
