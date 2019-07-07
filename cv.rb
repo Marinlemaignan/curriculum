@@ -51,8 +51,22 @@ private
 
   def work_experience
     [{
+      from:             "November 2018",
+      to:               DateTime.now,
+      company:          "Cartesdart.fr & Dragonart.fr",
+      title:            "Freelance Developer and Designer",
+      contract:         "Freelance",
+      city:             "Paris"
+    },{
+      from:             "August 2017",
+      to:               "September 2018",
+      company:          "Livestorm.co",
+      title:            "Senior Back End (Ruby) Developer",
+      contract:         "Fulltime",
+      city:             "Paris"
+    },{
       from:             "April 2015",
-      to:               Time.now,
+      to:               "March 2017",
       company:          "monAlbumPhoto.fr",
       title:            "Back End (Ruby) Developer",
       contract:         "Fulltime",
